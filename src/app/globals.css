@@ -2,7 +2,21 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --black: #171717;
+  --grey: #CACACD;
+  --valgt: #F2968F;
+  --back: #F8F8F8;
+
+  
+  /* text */
+  --singlecard-h1: 28px ;
+  --singlecard-p: 16px ;
+  --listecard-h1: 15px ;
+  --listecard-p: 12px ;
+  --button-p: 16px;
+  --h1: 18px;
+
+
 }
 
 @theme inline {
