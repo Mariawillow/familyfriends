@@ -2,7 +2,7 @@ import { LuBellDot } from "react-icons/lu";
 
 const Header = () => {
     return ( <div className="flex justify-evenly">
-        <p className="">FamilyFriends</p>
+        <p className="font-bold">FamilyFriends</p>
 <LuBellDot />
 
     </div> );
