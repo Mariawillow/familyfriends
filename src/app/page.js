@@ -1,5 +1,3 @@
-import Header from"@/components/Header.jsx";
-import Footer from"@/components/Footer.jsx";
 import Slider from"@/components/(main)/Slider.jsx";
 import Listecard from"@/components/(main)/Listecard.jsx";
 import RemoteImage from "@/components/sandbox";
@@ -19,10 +17,10 @@ export default async function Home() {
   console.log(animals);
   return (
     <div>
-      <div><Header  /></div>
       <RemoteImage  />
       <div><Slider /></div>
       <div><Listecard /></div>
+
 
 
     </div>
