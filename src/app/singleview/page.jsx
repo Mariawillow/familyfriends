@@ -5,7 +5,7 @@ import RemoteImage from "@/components/sandbox";
 import "@/app/globals.css";
 
 
-import Link from "next/link";
+// import Link from "next/link";
 
 const Singleview = () => {
     return <div> 

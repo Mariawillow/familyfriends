@@ -1,5 +1,5 @@
-import { FaRegStar } from "react-icons/fa";
-import RemoteImage from "@/components/sandbox";
+// import { FaRegStar } from "react-icons/fa";
+// import RemoteImage from "@/components/sandbox";
 import Slider from"@/components/(main)/Slider.jsx";
 import Listecard from"@/components/(main)/Listecard.jsx";
 

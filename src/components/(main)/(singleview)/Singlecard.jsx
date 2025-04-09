@@ -1,3 +1,6 @@
+import RemoteImage from "@/components/sandbox";
+import "@/app/globals.css";
+
 const Singleview = () => {
         return ( <div> 
             <div>

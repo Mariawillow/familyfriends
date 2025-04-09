@@ -1,6 +1,7 @@
 import Slider from"@/components/(main)/Slider.jsx";
 import Listecard from"@/components/(main)/Listecard.jsx";
-import Link from "next/link";
+import "@/app/globals.css";
+// import Link from "next/link";
 
 
 
