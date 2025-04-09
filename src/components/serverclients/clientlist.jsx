@@ -7,6 +7,11 @@ const ListClient = ({ data }) => {
     return <p>Ingen dyr at vise endnu...</p>;
   }
 
+// Logge billederne for at sikre, at de er der
+data.animals.forEach((animal) => {
+    console.log(animal.photos?.[0]?.small);  // Tjek hvad der bliver logget
+  });
+
   return (
     <ul className="flex flex-wrap gap-3 my-4">
       {data.animals.map((animal) => (

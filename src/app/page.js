@@ -1,10 +1,12 @@
 import ServerComponent from "@/components/serverclients/servercomponents.jsx";
+import Slider from "@/components/(main)/Slider.jsx";
+
 
 
 export default function Home() {
   return (
   <div>
-    <h2>Forside</h2>
+<Slider />
 <ServerComponent />
   </div>
   );
