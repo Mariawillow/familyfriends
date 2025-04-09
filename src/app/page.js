@@ -1,29 +1,11 @@
-import Slider from"@/components/(main)/Slider.jsx";
-import Listecard from"@/components/(main)/Listecard.jsx";
-import "@/app/globals.css";
-// import Link from "next/link";
+import ServerComponent from "@/components/serverclients/servercomponents.jsx";
 
 
-
-
-
-export default async function Home() {
-  const data = await fetch('https://api.petfinder.com/v2/animals', {
-
-// optionobjects
-  headers: {
-    Authorization: `Bearer ${process.env.API_TOKEN}`,
-  }
-  });
-  const animals = await data.json();
-  console.log(animals);
+export default function Home() {
   return (
-    <div>
-      <div><Slider /></div>
-      <div><Listecard /></div>
-
-
-
-    </div>
+  <div>
+    <h2>Forside</h2>
+<ServerComponent />
+  </div>
   );
 }

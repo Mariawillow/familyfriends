@@ -1,26 +1,19 @@
-// import { FaRegStar } from "react-icons/fa";
-// import RemoteImage from "@/components/sandbox";
-import Slider from"@/components/(main)/Slider.jsx";
-import Listecard from"@/components/(main)/Listecard.jsx";
+"use client";
+import Card from "@/components/(main)/Card.jsx";
 
-
-export default async function Page() {
-    const data = await fetch('https://api.petfinder.com/v2/animals', {
-  
-  // optionobjects
-    headers: {
-      Authorization: `Bearer ${process.env.API_TOKEN}`,
-    }
-    });
-    const animals = await data.json();
-    console.log(animals);
-    return (
-      <div>
-        <div><Slider /></div>
-        <div><Listecard /></div>
-  
-  
-  
-      </div>
-    );
+const ListClient = ({ data }) => {
+  // Fejlbeskyttelse: vis besked eller loader, hvis data ikke er klar
+  if (!Array.isArray(data?.animals)) {
+    return <p>Ingen dyr at vise endnu...</p>;
   }
+
+  return (
+    <ul className="flex flex-wrap gap-3 my-4">
+      {data.animals.map((animal) => (
+        <Card key={animal.id} animal={animal} />
+      ))}
+    </ul>
+  );
+};
+
+export default ListClient;
