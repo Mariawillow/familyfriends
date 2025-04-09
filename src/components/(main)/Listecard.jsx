@@ -1,18 +1,26 @@
 import { FaRegStar } from "react-icons/fa";
 import RemoteImage from "@/components/sandbox";
+import Slider from"@/components/(main)/Slider.jsx";
+import Listecard from"@/components/(main)/Listecard.jsx";
 
 
-
-const Listecard = () => {
-    return ( <div className="bg-red-200 rounded-2xl w-40  m-2">
-              <RemoteImage className="full-bleed" />
-
-        <FaRegStar className="bg-white m-2 rounded-2xl p-2" />
-        <h1>bla bla</h1>
-        <p> lon   kl lkw </p>
-        <p> lewllkr</p>
-
-    </div> );
-}
- 
-export default Listecard;
+export default async function Page() {
+    const data = await fetch('https://api.petfinder.com/v2/animals', {
+  
+  // optionobjects
+    headers: {
+      Authorization: `Bearer ${process.env.API_TOKEN}`,
+    }
+    });
+    const animals = await data.json();
+    console.log(animals);
+    return (
+      <div>
+        <div><Slider /></div>
+        <div><Listecard /></div>
+  
+  
+  
+      </div>
+    );
+  }

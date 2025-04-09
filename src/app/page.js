@@ -1,6 +1,7 @@
 import Slider from"@/components/(main)/Slider.jsx";
 import Listecard from"@/components/(main)/Listecard.jsx";
-import RemoteImage from "@/components/sandbox";
+import Link from "next/link";
+
 
 
 
@@ -17,7 +18,6 @@ export default async function Home() {
   console.log(animals);
   return (
     <div>
-      <RemoteImage  />
       <div><Slider /></div>
       <div><Listecard /></div>
 
