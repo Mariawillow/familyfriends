@@ -14,11 +14,11 @@
 //   return res.json();
 // };
 
-// const AnimalPage = async ({ params }) => {
-//   const { id } = params;
-//   const data = await getAnimalById(id);
+const AnimalPage = async ({ params }) => {
+  const { id } =  params;
+  const data = await getAnimalById(id);
 
-//   return <Single animal={data.animal} />;
-// };
+  return <Single animal={data.animal} />;
+};
 
 // export default AnimalPage;

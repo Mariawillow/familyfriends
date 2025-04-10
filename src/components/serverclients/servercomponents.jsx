@@ -16,6 +16,15 @@ const Servercomponent = async () => {
   //Efter at dataene er hentet og logget, returnerer Servercomponent en JSX-struktur, som renderer ListClient-komponenten.
 //data={animals} sender de hentede dyre-data som en prop til ListClient-komponenten. ListClient vil modtage animals og bruge dem til at vise dyrene på klienten (i frontend)
   return <ListClient data={animals}></ListClient>;
+
+
+  //trols:
+
+  // return <ul>
+  //   {data.animals.map((animal) => <li key={animal.id}><Link href="/singleview/id">{animal.name}</Link>
+  //   <Link href="{singleview}">{animal.name}</Link>
+  //   </li>)}
+  // </ul>
 };
 
 export default Servercomponent;
