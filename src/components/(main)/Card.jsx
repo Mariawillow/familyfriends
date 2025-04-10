@@ -1,4 +1,7 @@
 import Image from "next/image";
+import { LuStar } from "react-icons/lu";
+
+
 
 const Card = ({ animal }) => {
   return (
@@ -15,6 +18,9 @@ const Card = ({ animal }) => {
       ) : (
         <div className="w-40 h-28 bg-amber-600 rounded-2xl"></div>
       )}
+      <div className="bg-gray-200 rounded-2xl p-2">
+        <LuStar className="" />
+      </div>
       <div className="flex justify-between items-center mx-2">
         <h2 className="max-w-[100px]">{animal.name}</h2>
         <p className="text-[#33333366] text-[13px]">{animal.age}</p>
