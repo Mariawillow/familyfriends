@@ -10,7 +10,8 @@ import { FiUser } from "react-icons/fi";
 const Footer = () => {
     return ( <div className="grid grid-cols-4 gap-3 text-2xl fixed bottom-0 left-0 w-full bg-neutral-100 p-5 text-neutral-500/30">
 <LuHouse />
-<FaRegStar />
+<Link href="/iwatch"><FaRegStar /></Link>
+
 <FaRegComment />
 <FiUser />
 

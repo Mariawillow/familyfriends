@@ -18,8 +18,10 @@ const Card = ({ animal }) => {
       ) : (
         <div className="w-40 h-28 bg-amber-600 rounded-2xl"></div>
       )}
-      <div className="bg-gray-200 rounded-2xl p-2">
-        <LuStar className="" />
+      <div className="flex justify-end pt-2 pb-1">
+      <div className="bg-gray-200 p-1 rounded-full">
+        <LuStar className=" text-yellow-500" />
+      </div>
       </div>
       <div className="flex justify-between items-center mx-2">
         <h2 className="max-w-[100px]">{animal.name}</h2>

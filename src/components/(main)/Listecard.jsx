@@ -1,6 +1,7 @@
 "use client";
 import Card from "@/components/(main)/Card.jsx";
 
+
 const ListClient = ({ data }) => {
   // Fejlbeskyttelse: vis besked eller loader, hvis data ikke er klar
   if (!Array.isArray(data?.animals)) {
